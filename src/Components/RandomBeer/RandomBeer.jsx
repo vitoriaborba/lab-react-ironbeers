@@ -21,9 +21,13 @@ function RamdomBeer() {
     <div>
        <Navbar></Navbar>
        <div>
-          <h2>{getRandomBeers.name}</h2>
           <img src={getRandomBeers.image_url} alt={getRandomBeers.name} />
+          <h2>{getRandomBeers.name}</h2>
           <h4>{getRandomBeers.tagline}</h4>
+          <h6>{getRandomBeers.first_brewed}</h6>
+          <h6>{getRandomBeers.attenuation_level}</h6>
+          <p>{getRandomBeers.description}</p>
+          <h3>{getRandomBeers.contributed_by}</h3>   
                       
       </div>
     </div>

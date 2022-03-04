@@ -23,10 +23,13 @@ function BeerDetails() {
     <div>
         <Navbar></Navbar>
         <div>
+          <img src={getOneBeer.image_url} alt={getOneBeer.name}/>
           <h2>{getOneBeer.name}</h2>
-          <img src={getOneBeer.image_url} alt={getOneBeer.name} />
           <h4>{getOneBeer.tagline}</h4>
-                      
+          <h6>{getOneBeer.first_brewed}</h6>
+          <h6>{getOneBeer.attenuation_level}</h6>
+          <p>{getOneBeer.description}</p>
+          <h3>{getOneBeer.contributed_by}</h3>   
       </div>
     </div>
   )

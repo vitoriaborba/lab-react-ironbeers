@@ -23,11 +23,12 @@ function BeerList() {
         {getBeers.map((beer) =>{
             return (
                 <div key={beer._id}>
-                  <h2>{beer.name}</h2>
                   <Link to={`/${beer._id}`}>
                     <img src={beer.image_url} alt={beer.name} />
+                    <h2>{beer.name}</h2> 
                   </Link>  
                    <h4>{beer.tagline}</h4>
+                   <h3>{beer.contributed_by}</h3>
                 </div>
             );
         })}
