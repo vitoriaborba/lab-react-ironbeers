@@ -30,6 +30,7 @@ function NewBeer() {
         SetBrewersTips('');
         SetAttenuationLevel(0);
         SetContributedBy('');
+        navigate('/beers');
       })
       .catch((err) => console.log(err));
   };
